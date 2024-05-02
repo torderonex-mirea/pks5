@@ -1,0 +1,76 @@
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\appsettings.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.staticwebassets.runtime.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.exe
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.deps.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.runtimeconfig.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\5praktika.pdb
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\Npgsql.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.csproj.AssemblyReference.cache
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.AssemblyInfoInputs.cache
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.AssemblyInfo.cs
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.csproj.CoreCompileInputs.cache
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.5praktika.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.build.5praktika.props
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.5praktika.props
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.5praktika.props
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\scopedcss\bundle\5praktika.styles.css
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\scopedcss\projectbundle\5praktika.bundle.scp.css
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.csproj.Up2Date
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\refint\5praktika.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.pdb
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\5praktika.genruntimeconfig.cache
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\ref\5praktika.dll
+C:\Users\selak\OneDrive\Рабочий стол\4 семестр\Корпоративка\5praktika\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\NavBar.razor.rz.scp.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\appsettings.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.staticwebassets.runtime.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.exe
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.deps.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.runtimeconfig.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\5praktika.pdb
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\Npgsql.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.csproj.AssemblyReference.cache
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.AssemblyInfoInputs.cache
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.AssemblyInfo.cs
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.csproj.CoreCompileInputs.cache
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.sourcelink.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.5praktika.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.build.5praktika.props
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.5praktika.props
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.5praktika.props
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\NavBar.razor.rz.scp.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\scopedcss\bundle\5praktika.styles.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\scopedcss\projectbundle\5praktika.bundle.scp.css
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.csproj.Up2Date
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\refint\5praktika.dll
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.pdb
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\5praktika.genruntimeconfig.cache
+C:\Users\gorka\Source\Repos\pks-mirea-5\5praktika\obj\Debug\net8.0\ref\5praktika.dll
+C:\Users\gorka\source\repos\pks-mirea-5\5praktika\bin\Debug\net8.0\libman.json

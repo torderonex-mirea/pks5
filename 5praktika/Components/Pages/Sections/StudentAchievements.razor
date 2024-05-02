@@ -1,0 +1,147 @@
+﻿@page "/profile/studentachievements"
+@rendermode InteractiveServer
+
+<PageTitle>Мои достижения</PageTitle>
+
+@using _5praktika.Models.Entities
+@using _5praktika.Data
+@using System.Security.Claims
+@inject AppDbContext appDbContext
+@attribute [Authorize]
+
+<h3>Личные достижения</h3>
+
+<div class="mb-3">
+    <label for="dateSort">Сортировать по дате:</label>
+    <select id="dateSort" @bind="@dateSortDirection" @oninput="SortAchievements">
+        <option value="desc">От недавних</option>
+        <option value="asc">От старых</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="typeFilter">Вид:</label>
+    <select id="typeFilter" @bind="@typeFilter" @oninput="SortTypes">
+        <option value="">Все</option>
+        <option value="Учеба">Учеба</option>
+        <option value="Спорт">Спорт</option>
+        <option value="Наука">Наука</option>
+    </select>
+</div>
+
+@* <div class="mb-3">
+    <button class="btn btn-primary" @onclick="LoadAchievements">Применить фильтр</button>
+</div>
+ *@
+
+@if (achievements != null && achievements.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Метка</th>
+                <th>Вид</th>
+                <th>Дата</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var achievement in achievements)
+            {
+                <tr>
+                    <td><i class="@GetIconClassForAchievementType(achievement.AchievementType)"></i></td>
+                    <td>@achievement.AchievementDate</td>
+                    <td>@achievement.AchievementType</td>
+                    <td>@achievement.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>У вас пока нет личных достижений</p>
+}
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+    private List<Achievement> achievements;
+    private Student student;
+    private DateTime? dateFilter;
+    private string typeFilter = "";
+    private string dateSortDirection = "asc";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await getStudentId();
+        LoadAchievements();
+    }
+
+    private async Task getStudentId()
+    {
+        var authenticationState = await authenticationStateTask;
+        var username = authenticationState.User.Identity.Name;
+        student = appDbContext.Students.FirstOrDefault(s => s.Username == username);
+    }
+
+    private void SortAchievements(ChangeEventArgs e)
+    {
+        dateSortDirection = e.Value.ToString();
+        LoadAchievements();
+    }
+
+    private void SortTypes(ChangeEventArgs e)
+    {
+        typeFilter = e.Value.ToString();
+        LoadAchievements();
+    }
+
+    private void LoadAchievements()
+    {
+        Console.WriteLine("typeFilter", typeFilter);
+        if (student != null)
+        {
+            IQueryable<Achievement> query = appDbContext.Achievements
+                                                             .Where(a => a.StudentID == student.StudentID);
+
+            if (dateFilter.HasValue)
+            {
+                var selectedDate = dateFilter.Value.Date; // Получаем только дату без времени
+                query = query.Where(a => a.AchievementDate.Date >= selectedDate);
+            }
+
+            if (dateSortDirection == "asc")
+            {
+                query = query.OrderBy(a => a.AchievementDate);
+            }
+            else
+            {
+                query = query.OrderByDescending(a => a.AchievementDate);
+            }
+
+            if (!string.IsNullOrEmpty(typeFilter))
+            {
+                query = query.Where(a => a.AchievementType == typeFilter);
+            }
+
+            achievements = query.ToList();
+        }
+    }
+
+    private string GetIconClassForAchievementType(string achievementType)
+    {
+        switch (achievementType)
+        {
+            case "Учеба":
+                return "fas fa-graduation-cap"; // иконка для типа "Учеба"
+            case "Спорт":
+                return "fas fa-running"; // иконка для типа "Спорт"
+            case "Наука":
+                return "fas fa-flask"; // иконка для типа "Наука"
+            default:
+                return ""; // пустая строка, если тип неизвестен
+        }
+    }
+
+}

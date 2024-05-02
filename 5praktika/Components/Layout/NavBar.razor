@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+
+<div class="top-row px-4">
+    <AuthorizeView>
+        <NotAuthorized>
+            <NavLink class="nav-link" href="/">
+                На главную
+            </NavLink>
+            <NavLink class="nav-link" href="/login">
+                Войти
+            </NavLink>
+            <NavLink class="nav-link" href="/register">
+                Регистрация
+            </NavLink>
+        </NotAuthorized>
+        <Authorized>
+            <NavLink class="nav-link" href="/logout">
+                Выйти
+            </NavLink>
+        </Authorized>
+    </AuthorizeView>
+</div>

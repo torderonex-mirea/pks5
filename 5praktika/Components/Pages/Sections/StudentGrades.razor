@@ -1,0 +1,106 @@
+﻿@page "/profile/studentgrades"
+@rendermode InteractiveServer
+
+<PageTitle>Моя успеваемость</PageTitle>
+
+@using _5praktika.Models.Entities
+@using _5praktika.Data
+@using System.Security.Claims
+@inject AppDbContext appDbContext
+@attribute [Authorize]
+
+<h3>Успеваемость</h3>
+
+<div class="mb-3">
+    <input type="text" class="form-control" placeholder="Поиск" value="@searchTerm" @oninput="UpdateSearchTerm" />
+</div>
+
+
+
+
+@if (grades != null && grades.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Семестр</th>
+                <th>Название дисциплины</th>
+                <th>Оценка</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var grade in grades)
+            {
+                <tr>
+                    <td>@grade.Semester</td>
+                    <td>@grade.DisciplineName</td>
+                    <td>@grade.Grade</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>У вас пока нет оценок</p>
+}
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+    private List<StudentGrade> grades;
+    private Student student;
+    public string searchTerm = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await getStudentId();
+        LoadGrades();
+    }
+
+    private async Task getStudentId()
+    {
+        var authenticationState = await authenticationStateTask;
+        var username = authenticationState.User.Identity.Name;
+        student = appDbContext.Students.FirstOrDefault(s => s.Username == username);
+    }
+
+    private void LoadGrades()
+    {
+        if (student != null)
+        {
+            grades = appDbContext.StudentGrades
+                                 .Where(g => g.StudentID == student.StudentID)
+                                 .ToList();
+        }
+    }
+
+    private void Search()
+    {
+        if (!string.IsNullOrEmpty(searchTerm))
+        {
+            grades = appDbContext.StudentGrades
+                                 .Where(g => g.StudentID == student.StudentID && g.DisciplineName.ToLower().Contains(searchTerm.ToLower()))
+                                 .ToList();
+        }
+        else
+        {
+            LoadGrades();
+        }
+    }
+
+    private void UpdateSearchTerm(ChangeEventArgs e)
+    {
+        searchTerm = e.Value.ToString();
+        Search();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Search();
+        }
+    }
+}
+

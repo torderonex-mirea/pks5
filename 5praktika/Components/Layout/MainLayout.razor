@@ -1,0 +1,28 @@
+﻿@page "/profile"
+
+<PageTitle>Профиль</PageTitle>
+
+@inherits LayoutComponentBase
+
+<div class="page">
+    <main>
+        <NavBar/>
+        <AuthorizeView>
+            <NotAuthorized>
+                <article class="content px-4">
+                    @Body
+                </article>
+            </NotAuthorized>
+            <Authorized>
+                <div class="d-flex">
+                    <div class="sidebar">
+                        <NavMenu />
+                    </div>
+                    <div class="content px-4">
+                        @Body
+                    </div>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+    </main>
+</div>

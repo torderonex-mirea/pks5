@@ -1,0 +1,64 @@
+﻿@page "/profile/teacherinfo"
+@rendermode InteractiveServer
+
+<PageTitle>Преподаватели</PageTitle>
+
+@using _5praktika.Models.Entities
+@using _5praktika.Data
+@using System.Security.Claims
+@inject AppDbContext appDbContext
+@attribute [Authorize]
+
+<h3>Информация о  преподавателях</h3>
+
+@if (teachers != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ФИО преподавателя</th>
+                <th>Название дисциплины</th>
+                <th>Название кафедры</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in teachers)
+            {
+                <tr>
+                    <td>@teacher.FullName</td>
+                    <td>@teacher.DisciplineName</td>
+                    <td>@teacher.DepartmentName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Нет данных о преподавателях</p>
+}
+
+@code {
+    dynamic teachers;
+
+    protected override void OnInitialized()
+    {
+        LoadTeachers();
+    }
+
+    private void LoadTeachers()
+    {
+        teachers = appDbContext.Teachers
+                                 .Join(appDbContext.TeacherDisciplines,
+                                       teacher => teacher.TeacherID,
+                                       discipline => discipline.TeacherID,
+                                       (teacher, discipline) => new
+                                           {
+                                               FullName = teacher.FullName,
+                                               DisciplineName = discipline.DisciplineName,
+                                               DepartmentName = discipline.Department
+                                           })
+                                 .ToList();
+    }
+
+}

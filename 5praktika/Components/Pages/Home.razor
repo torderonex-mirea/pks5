@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>Главная</PageTitle>
+
+@using Microsoft.AspNetCore.Authentication
+@inject NavigationManager navigationManager
+
+<div class="col-12">
+	<div class="card">
+		<div class="card-body text-center">
+			<img src="/images/mirealogo.jpg" alt="Your Image" style="width: 150px; height: 150px">
+			<h2>Добро пожаловать! Вы на главной странице.</h2>
+			<p>Войдите в свой аккаунт или создайте новый, если ранее не регистрировались!</p>
+		</div>
+	</div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext HttpContext { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        if (HttpContext.User.Identity.IsAuthenticated)
+        {
+            navigationManager.NavigateTo("/profile/studentgrades");
+        }
+    }
+}
